@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+        // Proyecto Final - Diseño Web Adaptable - Período III //
+        Estudiantes:
+        1. Magaña Urrutia, Juan Sebastian - 2019MU601   
+        2. Santamaría Calderón, René Francisco - 2018SC606
+        3. Palma Flores, Bryan Mauricio - 2018PF601
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Dairy Store - Mantequilla</title>
+</head>
+<body>
+    <!-- Body definition starts here -->
+
+    <!-- Head -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="d-inline-block align-top" 
+            style="width:84px; height:35px;">
+        </a>
+        <a class="navbar-brand" href="index.html">
+            The Dairy Store
+        </a>
+
+        <button type="button" class="btn btn-custom-basket zoom d-lg-none 
+            offset-md-5 offset-sm-3"style="width: 80px; height: 40px;" 
+            data-toggle="modal" data-target="#basket">
+                &#10240;<img src="media/basket.svg" style="width:25px;">
+                <span class="total-count"></span>&#10240;
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="toggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="cat_leche.html">Leche</a>
+                        <a class="dropdown-item" href="cat_queso.html">Queso</a>
+                        <a class="dropdown-item active" href="cat_mantequilla.html">Mantequilla</a>
+                        <a class="dropdown-item" href="cat_crema.html">Crema</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="row" style="padding-right: 20px;">
+                
+                <button type="button" class="btn btn-custom-basket zoom d-none d-lg-block"
+                    style="width: 80px; height: 40px;" 
+                    data-toggle="modal" data-target="#basket">
+                    &#10240;<img src="media/basket.svg" style="width:25px;">
+                    <span class="total-count"></span>&#10240;
+                </button>
+
+                <a class="nav-link" href="https://www.pinterest.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_pin.svg"></a>
+                <a class="nav-link" href="https://www.facebook.com/officialbyrnedairy/" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_fb.svg"></a>
+                <a class="nav-link" href="https://twitter.com/byrnedairy" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_tw.svg"></a>
+                <a class="nav-link" href="https://www.instagram.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_ig.svg"></a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Banner-->
+    <div id="carouselIndex" class="carousel slide" data-ride="carousel" 
+    data-interval="4000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselIndex" data-slide-to="0" 
+            class="active"></li>
+            <li data-target="#carouselIndex" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="list">
+
+            <div class="carousel-item active" 
+            style="background-image:url('media/bg7.jpg');">
+
+                <div class="container" style="padding-top: 150px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>MANTEQUILLA EN DAIRY SHOP</b></h1>
+                        <h4 style="color: #FFFFFF;">DESDE LAS MEJORES
+                        <span style="color:#FBEAA8;">GRANJAS</span> Y 
+                        <span style="color:#FFD7BA;">PLANTAS</span> EN TODO USA</h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" 
+            style="background-image:url('media/bg8.jpg');">
+
+                <div class="container" style="padding-top: 150px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>MANTEQUILLA EN DAIRY SHOP</b></h1>
+                        <h4 style="color: #FFFFFF;">ENCUENTRA LOS
+                        <span style="color:#FDF0A6;">MEJORES </span> Y MÁS
+                        <span style="color:#FFC69C;">FINOS </span> INGREDIENTES</h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.10; padding-top: 5px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 7px; padding-bottom: 5px;"></div>
+
+    <!-- Contenido -->
+	<div class="container-fluid" style="padding-top: 35px;">
+        <h4 style="color: #333333; text-align: center;"><b>PRODUCTOS DISPONIBLES</b></h4>
+        <div class="text-line" style="width: 320px;"></div><br>
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/1.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            Mantequilla Lakeland
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star1.png"> 
+                        <p class="card-text"><br>
+                            Tazas de mantequilla de crema irlandesa con sal.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$0.50</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="Mantequilla&#10240;Lakeland" 
+                            data-price="0.50">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/2.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            7oz Mantequilla Finlandia   
+                        </h5>  
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> 
+                        <p class="card-text"><br>
+                            Importada desde Finlandia, hecha de crema orgánica.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.40</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="7oz&#10240;Mantequilla&#10240;Finlandia" 
+                            data-price="1.40">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/3.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            16oz Mant. Challenge
+                        </h5>  
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star1.png"> 
+                        <p class="card-text"><br>
+                            Mantequilla Europea dulce ligeramente a nuez y picante.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.50</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="16oz&#10240;Mant.&#10240;Challenge" 
+                            data-price="2.50">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/4.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            Mantequilla Govind
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> 
+                        <p class="card-text"><br>
+                            Mantequilla lechosa de textura suave y rica en decadencia.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$6.25</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="Mantequilla&#10240;Govind" 
+                            data-price="6.25">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/5.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            250g Mant. Douceur
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star0.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            De leche 100% de animales alimentados con pasto.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.80</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="250g&#10240;Mant.&#10240;Douceur" 
+                            data-price="1.80">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/6.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            8oz Mant. Kerrygolg
+                        </h5>  
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star1.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Mantequilla Irlandesa, con toques de crema dulce.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.60</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="8oz&#10240;Mant.&#10240;Kerrygolg" 
+                            data-price="1.60">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/7.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            8oz Mantequilla Anchor
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star0.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Importada de Nueva Zelanda, de ingredientes orgánicos.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.10</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="8oz&#10240;Mantequilla&#10240;Anchor" 
+                            data-price="1.10">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/8.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            250g Mant. Ballantyne
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star1.png"> 
+                        <p class="card-text"><br>
+                            Mantequilla Australiana con sal, 100% producto orgánico.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.40</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="250g&#10240;Mant.&#10240;Ballantyne" 
+                            data-price="2.40">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/9.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            500g Mant. Western
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Producto orgánico, ingredientes 100% naturales.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.80</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="500g&#10240;Mant.&#10240;Western" 
+                            data-price="2.80">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/10.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            1lb Mantequilla HEB
+                        </h5>  
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star1.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Mantequilla dulce, sin sal o sabores artificiales.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$3.20</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="1lb&#10240;Mantequilla&#10240;HEB" 
+                            data-price="3.20">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/11.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            1lb Mantequilla LandO
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star0.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Importada desde Ontario, crema suave y dulce.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.60</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="1lb&#10240;Mantequilla&#10240;LandO" 
+                            data-price="1.60">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/butter/12.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            250g Mantequilla SCS
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star1.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Mantequilla de Singapur. Producto natural salado.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.10</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="250g&#10240;Mantequilla&#10240;SCS" 
+                            data-price="1.10">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 9px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.20; padding-top: 7px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color:#1E1E21; 
+        padding-bottom:10px;">
+        <div class="footer-copyright text-center" style="color:#FFFFFF;"><br>
+            © 2020 Copyright: Sebastian Magaña; Francisco Santamaría; Bryan Palma - Diseño Web Adaptable 
+            <br><br>
+        </div>
+    </div>
+
+    <!-- Basket - Modal -->
+    <div class="modal" role="dialog" id="basket" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Dairy Store - Orden de Compra</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="show-basket table"></table>
+                    <div class="float-right">
+                        <b style="color:#2F7661;">
+                            Total: $<span class="total-cart"></span>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Regresar
+                    </button>
+                    <a class="btn btn-custom" href="pago.html">
+                        Continuar a Pago
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+    <!-- Body definition ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- JavaScript -->
+<script src="script.js"></script>
+</html>

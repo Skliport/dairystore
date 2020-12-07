@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- 
+        // Proyecto Final - Diseño Web Adaptable - Período III //
+        Estudiantes:
+        1. Magaña Urrutia, Juan Sebastian - 2019MU601   
+        2. Santamaría Calderón, René Francisco - 2018SC606
+        3. Palma Flores, Bryan Mauricio - 2018PF601
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Dairy Store - Inicio</title>
+</head>
+<body>
+    <!-- Body definition starts here -->
+
+    <!-- Head -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="d-inline-block align-top" 
+            style="width:84px; height:35px;">
+        </a>
+        <a class="navbar-brand" href="index.html">
+            The Dairy Store
+        </a>
+
+        <button type="button" class="btn btn-custom-basket zoom d-lg-none 
+            offset-md-5 offset-sm-3"style="width: 80px; height: 40px;" 
+            data-toggle="modal" data-target="#basket">
+                &#10240;<img src="media/basket.svg" style="width:25px;">
+                <span class="total-count"></span>&#10240;
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="toggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="cat_leche.html">Leche</a>
+                        <a class="dropdown-item" href="cat_queso.html">Queso</a>
+                        <a class="dropdown-item" href="cat_mantequilla.html">Mantequilla</a>
+                        <a class="dropdown-item" href="cat_crema.html">Crema</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>              
+            </ul>
+            
+            <div class="row" style="padding-right: 20px;">
+                
+                <button type="button" class="btn btn-custom-basket zoom d-none d-lg-block"
+                    style="width: 80px; height: 40px;" 
+                    data-toggle="modal" data-target="#basket">
+                    &#10240;<img src="media/basket.svg" style="width:25px;">
+                    <span class="total-count"></span>&#10240;
+                </button>
+
+                <a class="nav-link" href="https://www.pinterest.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_pin.svg"></a>
+                <a class="nav-link" href="https://www.facebook.com/officialbyrnedairy/" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_fb.svg"></a>
+                <a class="nav-link" href="https://twitter.com/byrnedairy" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_tw.svg"></a>
+                <a class="nav-link" href="https://www.instagram.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_ig.svg"></a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Banner-->
+    <div id="carouselIndex" class="carousel slide" data-ride="carousel" 
+    data-interval="4000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselIndex" data-slide-to="0" 
+            class="active"></li>
+            <li data-target="#carouselIndex" data-slide-to="1"></li>
+            <li data-target="#carouselIndex" data-slide-to="2"></li>
+            <li data-target="#carouselIndex" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="list">
+
+            <div class="carousel-item active" 
+            style="background-image:url('media/bg1.jpg');">
+
+                <div class="container" style="padding-top: 150px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>BIENVENIDO A DAIRY STORE</b></h1>
+                        <h4 style="color: #FFFFFF;">HOGAR DE LOS MÁS
+                        <span style="color:#FFD28C;">FINOS </span> Y
+                        <span style="color:#FFD28C;">FRESCOS </span>INGREDIENTES</h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" 
+            style="background-image:url('media/bg2.jpg');">
+
+                <div class="col-xl-5 col-md-8 col-sm-12 offset-xl-1 offset-lg-1
+                offset-md-1" style="padding-top:50px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>ONLINE STORE</b></h1>
+                        <br>
+                    </div> 
+                </div>
+
+                <div class="col-xl-4 col-md-7 col-sm-12 offset-xl-1 offset-lg-1
+                offset-md-1" style="padding-top:20px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <h5 style="color: #FFFFFF;"> HECHO CON
+                        <span style="color:#FDF6A9;"> CUIDADO </span>Y
+                        <span style="color:#FDF6A9;"> DEDICACIÓN</span></h5>
+                        <br>
+                    </div> 
+                </div>
+
+                <div class="col-xl-6 col-sm-12 offset-xl-1 offset-lg-1
+                offset-md-1" style="padding-top:25px;">
+                    <img src="media/award1.png" class="zoom" 
+                    style="width:160px; height:180px"> 
+                    <img src="media/award2.png" class="zoom" 
+                    style="width:160px; height:185px">  
+                </div>
+            </div>
+
+            <div class="carousel-item" 
+            style="background-image:url('media/bg3.jpg');">
+
+                <div class="container" style="padding-top: 150px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>BIENVENIDO A DAIRY STORE</b></h1>
+                        <h4 style="color: #FFFFFF;">DESCUBRE EL
+                        <span style="color:#FFD28C">MEJOR</span> Y MÁS
+                        <span style="color:#FFF6A7">DELICADO</span> SABOR DESDE 1886</h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" 
+            style="background-image:url('media/bg4.jpg');">
+                <div class="col-xl-5 col-md-8 col-sm-12 offset-xl-1 offset-lg-1
+                offset-md-1" style="padding-top:50px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>ONLINE STORE</b></h1>
+                        <br>
+                    </div> 
+                </div>
+
+                <div class="col-xl-4 col-md-7 col-sm-12 offset-xl-1 offset-lg-1
+                offset-md-1" style="padding-top:20px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <h5 style="color: #FFFFFF;">ES
+                        <span style="color:#FFD7B7"> MÁS </span>QUE UN
+                        <span style="color:#FFD7B7">PLATILLO</span> EN TU MESA</h5>
+                        <br>
+                    </div> 
+                </div>
+
+                <div class="col-xl-12 offset-xl-1 offset-lg-1
+                offset-md-1" style="padding-top:35px;">     
+                <img src="media/award3.png" class="zoom" 
+                    style="width:130px; height:160px;"> 
+                    <img src="media/award4.png" class="zoom" 
+                    style="width:180px; height:160px;">       
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Contenido -->
+    <div class="container-fluid" style="background-color:#171718;">
+        <div class="container" style="padding-top: 35px;">
+            <div class="row" style="text-align:left;">
+                
+                <div class="col-xl-6 col-sm-12">
+                    <h4 style="color: #F3F3F3;"><b>NUESTROS PRODUCTOS</b></h4><br>
+
+                    <p style="color:#E7E9E8;">
+                        Desde 1886 hemos estado produciendo una gran variedad de productos con nata fresca y leche de nuestras granjas familiares y socios locales. Sabemos la importancia de hacer, compartir y ofrecer productos puros, simples y de la más alta calidad disponible.
+                        <br><br>
+                        <a class="btn btn-custom zoom" href="acerca.html"
+                            style="font-size: 18px;">
+                            Conoce Nuestra Historia
+                        </a><br><br>
+                    </p>
+                </div>
+
+                <div class="col-xl-6 d-none d-xl-block" style="text-align:center;">
+                    <img src="media/bginicio.jpg"
+                    style="width:520px; height:220px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.10; padding-top: 5px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 7px; padding-bottom: 5px;"></div>
+
+    <!-- CATEGORIAS -->
+	<div class="container-fluid" style="padding-top: 25px; background-color:#FBFBFB;">
+        <h4 style="color: #333333; text-align: center;"><b>CATEGORÍAS</b></h4>
+        <div class="text-line" style="width: 180px;"></div><br>
+        <div class="row" style="text-align:center;">
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <a class="a-custom" href="cat_leche.html">
+                    <img src="media/cat1.jpg" class="zoom">
+                    <div class="centered-text">
+                        <h5>Leche</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <a class="a-custom" href="cat_queso.html">
+                    <img src="media/cat2.jpg" class="zoom">
+                    <div class="centered-text">
+                        <h5>Queso</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <a class="a-custom" href="cat_mantequilla.html">
+                    <img src="media/cat3.jpg" class="zoom">
+                    <div class="centered-text">
+                        <h5>Mantequilla</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <a class="a-custom" href="cat_crema.html">
+                    <img src="media/cat4.jpg" class="zoom">
+                    <div class="centered-text">
+                        <h5>Crema</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 7px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.10; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- OFERTAS -->
+    <div class="container-fluid" style="padding-top: 25px; background-color:#EDEDED;">
+        <h4 style="color: #333333; text-align: center;"><b>OFERTAS ESPECIALES</b></h4>
+        <div class="text-line" style="width: 250px; background-color:#37764D;"></div><br>
+            
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card card-wide text-center" style="width: 18rem;">
+                        <img class="card-img-top-wide" src="media/sale1.jpg">
+                        <div class="card-body" style="text-align:left;">
+                            <h5 class="card-title">
+                                Caja de Quesos 3lb
+                            </h5>
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star.png"> 
+                            <p class="card-text"><br>
+                                2 lb. Mild Cheddar<br>
+                                1 lb. Monterey Jack<br> 
+                                8 oz. Garlic & Chive Cheddar<br> 
+                                8 oz. Dill Jack
+                            </p>
+                            <p class="card-text" style="color:#2F7661;">
+                                <del style="color:#D03E56;"><b>$34.99</b></del>
+                                <img src="media/tag.png"> 
+                                <b>$30.00</b>
+                            </p>
+                            <a class="add-to-basket btn btn-custom zoom" href="#"
+                                data-name="Caja&#10240;de&#10240;Quesos&#10240;3lb" 
+                                data-price="30.0">
+                                Agregar a Orden
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card card-wide text-center" style="width: 18rem;">
+                        <img class="card-img-top-wide" src="media/sale2.jpg">
+                        <div class="card-body" style="text-align:left;">
+                            <h5 class="card-title">
+                                Caja Mixta Especial 3lb
+                            </h5>
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star1.png"> 
+                            <p class="card-text"><br>
+                               2 lb. Cheddar y Monterey Jack<br>
+                               1 lb. Sharp Cheddar<br>
+                               1 Summer Sausage Log<br>
+                               1 Caja de Snack Crackers
+                            </p>
+                            <p class="card-text" style="color:#2F7661;">
+                                <del style="color:#D03E56;"><b>$45.99</b></del> 
+                                <img src="media/tag.png"> <b>$40.00</b>
+                            </p>
+                            <a class="add-to-basket btn btn-custom zoom" href="#"
+                                data-name="Caja&#10240;Mixta&#10240;Especial&#10240;3lb" 
+                                data-price="40.00">
+                                Agregar a Orden
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card card-wide text-center" style="width: 18rem;">
+                        <img class="card-img-top-wide" src="media/sale3.jpg">
+                        <div class="card-body" style="text-align:left;">
+                            <h5 class="card-title">
+                                Caja Mixta Especial 4lb
+                            </h5>
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star1.png"> 
+                            <p class="card-text"><br>
+                                1 lb. Mild Cheddar<br>
+                                1 lb. Pepper Jack<br>
+                                2 lb. Sharp Cheddar<br>
+                                2 Summer Sausage Logs
+                            </p>
+                            <p class="card-text" style="color:#2F7661;">
+                                <del style="color:#D03E56;"><b>$40.99</b></del> 
+                                <img src="media/tag.png"> <b>$35.00</b>
+                            </p>
+                            <a class="add-to-basket btn btn-custom zoom" href="#"
+                                data-name="Caja&#10240;Mixta&#10240;Especial&#10240;4lb" 
+                                data-price="35.00">
+                                Agregar a Orden
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card card-wide text-center" style="width: 18rem;">
+                        <img class="card-img-top-wide" src="media/sale4.jpg">
+                        <div class="card-body" style="text-align:left;">
+                            <h5 class="card-title">
+                                Caja de Quesos 4lb
+                            </h5>
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star.png"> <img src="media/star.png">
+                            <img src="media/star.png"> 
+                            <p class="card-text"><br>
+                                2 lb. Cheddar & Pepper<br>
+                                1 lb. Jalapeño Cheddar<br>
+                                1 lb. Smoked Cheddar<br>
+                                8 oz. Green Olive Jack
+                            </p>
+                            <p class="card-text" style="color:#2F7661;">
+                                <del style="color:#D03E56;"><b>$39.99</b></del> 
+                                <img src="media/tag.png"> <b>$37.00</b>
+                            </p>
+                            <a class="add-to-basket btn btn-custom zoom" href="#"
+                                data-name="Caja&#10240;de&#10240;Quesos&#10240;4lb" 
+                                data-price="37.00">
+                                Agregar a Orden
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 9px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.20; padding-top: 7px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <div class="container-fluid" style="background-color:#171718;">
+        <div class="container" style="padding-top: 35px;">
+            <div class="row" style="text-align:left;">
+                
+                <div class="col-xl-6 d-none d-xl-block" style="text-align:center;">
+                    <img src="media/story.jpg"
+                    style="width:520px; height:220px;">
+                </div>
+
+                <div class="col-xl-6 col-sm-12">
+                    <h4 style="color: #F3F3F3;"><b>SERVICIOS Y OPORTUNIDADES</b></h4><br>
+                    <p style="color:#E7E9E8;">
+                        Nuestros productos presentan la más alta calidad y nuestra excelencia en el servicio es parte de la identidad de Dairy Store.
+                        Ofrecemos servicios de transporte de productos y supervisión de procesos lácteos.
+                        <br><br>
+                        <a class="btn btn-custom zoom" href="contacto.html"
+                            style="font-size: 18px;">
+                            Contactar Ahora
+                        </a><br><br><br>
+                    </p>           
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.98; padding-top: 9px; padding-bottom: 1px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.96; padding-top: 9px; padding-bottom: 1px;"></div>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color:#1E1E21; 
+        padding-bottom:10px;">
+        <div class="footer-copyright text-center" style="color:#FFFFFF;"><br>
+            © 2020 Copyright: Sebastian Magaña; Francisco Santamaría; Bryan Palma - Diseño Web Adaptable 
+            <br><br>
+        </div>
+    </div>
+
+    <!-- Basket - Modal -->
+    <div class="modal" role="dialog" id="basket" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Dairy Store - Orden de Compra</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="show-basket table"></table>
+                    <div class="float-right">
+                        <b style="color:#2F7661;">
+                            Total: $<span class="total-cart"></span>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Regresar
+                    </button>
+                    <a class="btn btn-custom" href="pago.html">
+                        Continuar a Pago
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+    
+    <!-- Body definition ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- JavaScript -->
+<script src="script.js"></script>
+</html>

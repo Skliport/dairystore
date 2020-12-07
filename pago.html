@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- 
+        // Proyecto Final - Diseño Web Adaptable - Período III //
+        Estudiantes:
+        1. Magaña Urrutia, Juan Sebastian - 2019MU601   
+        2. Santamaría Calderón, René Francisco - 2018SC606
+        3. Palma Flores, Bryan Mauricio - 2018PF601
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Dairy Store - Pago de Orden</title>
+</head>
+<body>
+    <!-- Body definition starts here -->
+
+    <!-- Head -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="d-inline-block align-top" 
+            style="width:84px; height:35px;">
+        </a>
+        <a class="navbar-brand" href="index.html">
+            The Dairy Store
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="toggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="cat_leche.html">Leche</a>
+                        <a class="dropdown-item" href="cat_queso.html">Queso</a>
+                        <a class="dropdown-item" href="cat_mantequilla.html">Mantequilla</a>
+                        <a class="dropdown-item" href="cat_crema.html">Crema</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="row" style="padding-right: 20px;">
+
+                <a class="nav-link" href="https://www.pinterest.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_pin.svg"></a>
+                <a class="nav-link" href="https://www.facebook.com/officialbyrnedairy/" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_fb.svg"></a>
+                <a class="nav-link" href="https://twitter.com/byrnedairy" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_tw.svg"></a>
+                <a class="nav-link" href="https://www.instagram.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_ig.svg"></a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.10; padding-top: 5px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 7px; padding-bottom: 5px;"></div>
+
+    <!-- Contenido -->
+    <div class="container" style="padding-top: 30px; ">
+        <div class="text-center" style="padding-bottom: 40px;">
+            <img class="d-block mx-auto mb-4" src="media/logo.png" width="20%">
+            <h2>¡Gracias por preferirnos!</h2>
+            <div class="text-line" style="width: 280px;"></div><br>
+            <p class="lead">Por favor complete el siguiente formulario para
+            finalizar su pedido y entregaremos su orden hasta la puerta de su casa.
+            Para más información sobre el manejo de paquetes y pedidos por mayor
+            por favor comunicarse con administración.</P></p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 float-right">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Orden Final</span>
+                    <span class="badge badge-secondary badge-pill total-count"></span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex bg-light">
+                        <button type="button" class="btn btn-block btn-custom-basket"
+                            data-toggle="modal" data-target="#basket"
+                            style="font-size: 18px;">
+                            Detalles de Pedido
+                        </button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <p>Subtotal:</p>
+                        <p>$ <span class="total-cart"></span></p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <p>Costo de envio:</p>
+                        <p>$ 5.00</span></p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <b>Total:</b>
+                        <b>$ <span class="total-final"></span></b>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-8 col-md-12">
+
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Dirección de envio</span>
+                </h4>
+                <form class="card-custom bg-light border" style="padding: 30px 30px">
+                    <div class="row">
+
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                            <label for="firstName">Nombre:</label>
+                            <input type="text" class="form-control" 
+                            placeholder="Ingrese un nombre...">
+                        </div>
+
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                            <label for="lastName">Apellido:</label>
+                            <input type="text" class="form-control" 
+                            placeholder="Ingrese un apellido...">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Correo Elecrónico:</label>
+                        <input type="email" class="form-control" placeholder="Ingrese una dirección de correo...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Dirección:</label>
+                        <input type="text" class="form-control" 
+                        placeholder="Ingrese una dirección...">
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                            <label for="country">País:</label>
+                            <select class="custom-select d-block">
+                                <option>El Salvador</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 col-sm-12 mb-3">
+                            <label for="state">Departameno:</label>
+                            <select class="custom-select d-block">
+                                <option>Santa Ana</option>
+                                <option>San Salvador</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                <h4 class="d-flex align-items-center mb-3">
+                    <span class="text-muted">Método de Pago</span>
+                </h4>
+
+                <form class="card-custom bg-light border" 
+                style="padding: 20px 30px 30px 30px">
+                    <div>
+                        <div class="custom-control custom-radio" 
+                        style="padding-bottom:10px;">
+                            <input type="radio" class="custom-control-input" id="paypal" name="group">
+                            <label class="custom-control-label" for="paypal">Paypal</label>
+                        </div>
+
+                        <div class="custom-control custom-radio" 
+                        style="padding-bottom:10px;">
+                            <input type="radio" class="custom-control-input" id="credito" name="group">
+                            <label class="custom-control-label" for="credito">
+                            Tarjeta de crédito</label>
+                        </div>
+
+                        <div class="custom-control custom-radio"
+                         style="padding-bottom:20px;">
+                            <input type="radio" class="custom-control-input" id="debito" name="group" checked>
+                            <label class="custom-control-label" for="debito">Tarjeta de
+                            débito</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                            <label for="cc-name">Nombre en tarjeta:</label>
+                            <input type="text" class="form-control">
+                            <small class="text-muted">
+                                Nombre completo de persona asociada
+                            </small>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                            <label for="cc-number">Número de tarjeta:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                            <label>Fecha de Expiración:</label>
+                            <input type="text" class="form-control">
+                            <small class="text-muted">
+                                Fecha antes de renovación
+                            </small>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12 mb-3">
+                            <label>CVV:</label>
+                            <input type="text" class="form-control">
+                            <small class="text-muted">
+                                Código de seguridad
+                            </small>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-lg btn-custom-basket btn-block">
+                        Finalizar Compra
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 9px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.20; padding-top: 7px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color:#1E1E21; 
+        padding-bottom:10px;">
+        <div class="footer-copyright text-center" style="color:#FFFFFF;"><br>
+            © 2020 Copyright: Sebastian Magaña; Francisco Santamaría; Bryan Palma - Diseño Web Adaptable 
+            <br><br>
+        </div>
+    </div>
+
+    <!-- Basket - Modal -->
+    <div class="modal" role="dialog" id="basket" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Dairy Store - Orden de Compra</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="show-basket table"></table>
+                    <div class="float-right">
+                        <b style="color:#2F7661;">
+                            Total: $<span class="total-cart"></span>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Regresar
+                    </button>
+                    <a class="btn btn-custom" href="pago.html">
+                        Continuar a Pago
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+    
+    <!-- Body definition ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- JavaScript -->
+<script src="script.js"></script>
+</html>

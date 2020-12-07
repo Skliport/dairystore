@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+        // Proyecto Final - Diseño Web Adaptable - Período III //
+        Estudiantes:
+        1. Magaña Urrutia, Juan Sebastian - 2019MU601   
+        2. Santamaría Calderón, René Francisco - 2018SC606
+        3. Palma Flores, Bryan Mauricio - 2018PF601
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Dairy Store - Leche</title>
+</head>
+<body>
+    <!-- Body definition starts here -->
+
+    <!-- Head -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="media/logo.png" class="d-inline-block align-top" 
+            style="width:84px; height:35px;">
+        </a>
+        <a class="navbar-brand" href="index.html">
+            The Dairy Store
+        </a>
+
+        <button type="button" class="btn btn-custom-basket zoom d-lg-none 
+            offset-md-5 offset-sm-3"style="width: 80px; height: 40px;" 
+            data-toggle="modal" data-target="#basket">
+                &#10240;<img src="media/basket.svg" style="width:25px;">
+                <span class="total-count"></span>&#10240;
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="toggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="cat_leche.html">Leche</a>
+                        <a class="dropdown-item" href="cat_queso.html">Queso</a>
+                        <a class="dropdown-item" href="cat_mantequilla.html">Mantequilla</a>
+                        <a class="dropdown-item" href="cat_crema.html">Crema</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="row" style="padding-right: 20px;">
+                
+                <button type="button" class="btn btn-custom-basket zoom d-none d-lg-block"
+                    style="width: 80px; height: 40px;" 
+                    data-toggle="modal" data-target="#basket">
+                    &#10240;<img src="media/basket.svg" style="width:25px;">
+                    <span class="total-count"></span>&#10240;
+                </button>
+
+                <a class="nav-link" href="https://www.pinterest.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_pin.svg"></a>
+                <a class="nav-link" href="https://www.facebook.com/officialbyrnedairy/" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_fb.svg"></a>
+                <a class="nav-link" href="https://twitter.com/byrnedairy" 
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_tw.svg"></a>
+                <a class="nav-link" href="https://www.instagram.com/oberweisdairy/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/sn_ig.svg"></a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Banner-->
+    <div id="carouselIndex" class="carousel slide" data-ride="carousel" 
+    data-interval="4000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselIndex" data-slide-to="0" 
+            class="active"></li>
+            <li data-target="#carouselIndex" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="list">
+
+            <div class="carousel-item active" 
+            style="background-image:url('media/bg5.jpg');">
+
+                <div class="container" style="padding-top: 150px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>LECHE EN DAIRY SHOP</b></h1>
+                        <h4 style="color: #FFFFFF;">CON LA
+                        <span style="color:#CBB1FF;">MEJOR </span> Y MÁS
+                        <span style="color:#C2A7F9;">ALTA </span> CALIDAD DESDE 1886</h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" 
+            style="background-image:url('media/bg6.jpg');">
+
+                <div class="container" style="padding-top: 150px;">
+                    <div style="background-color:rgba(0,0,10,.90); text-align:center;">
+                        <br>
+                        <img src="media/logo.png" style="width:310px; height:130px;">
+                        <br>
+                        <h1 style="color:#FFFFFF;"><b>LECHE EN DAIRY SHOP</b></h1>
+                        <h4 style="color: #FFFFFF;">DESDE LAS MEJORES
+                        <span style="color:#FFC79E">GRANJAS</span> Y 
+                        <span style="color:#FBC49B">PLANTAS</span> EN TODO USA</h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.10; padding-top: 5px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 7px; padding-bottom: 5px;"></div>
+
+    <!-- Contenido -->
+	<div class="container-fluid" style="padding-top: 35px;">
+        <h4 style="color: #333333; text-align: center;"><b>PRODUCTOS DISPONIBLES</b></h4>
+        <div class="text-line" style="width: 320px;"></div><br>
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/1.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            1L Leche Chocolate OATLY
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> 
+                        <p class="card-text"><br>
+                            Certificado sin GMO y sin hormonas artificiales.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.50</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="1L&#10240;Leche&#10240;Chocolate&#10240;OATLY" 
+                            data-price="1.50">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/2.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            1L Leche Alpro Almond
+                        </h5> 
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star1.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Sabor a almendra tostada, con ingredientes orgánicos.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.40</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="1L&#10240;Leche&#10240;Alpro&#10240;Almond" 
+                            data-price="2.40">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/3.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            50ml Leche Milfresh
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star1.png"> 
+                        <p class="card-text"><br>
+                           16 pods de leche dulce, ligeros dolce gusto.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$3.25</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="50ml&#10240;Leche&#10240;Milfresh" 
+                            data-price="3.25">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/4.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            1L Leche Dairy Pride
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star0.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Leche ecológica fresca semi-desnatada y suave.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.25</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="1L&#10240;Leche&#10240;Dairy&#10240;Pride" 
+                            data-price="2.25">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/5.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            50ml Pod Leche Colosseo
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                           50 pods con leche baja en grasa y sin azúcar añadida.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$0.50</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="50ml&#10240;Pod&#10240;Leche&#10240;Colosseo" 
+                            data-price="0.50">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/6.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            500gr Leche Colosseo
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star1.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Leche en polvo granulada ligera y descremada.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$4.25</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="500gr&#10240;Leche&#10240;Colosseo" 
+                            data-price="4.25">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/7.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            946ml Leche Milkadamia
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> 
+                        <p class="card-text"><br>
+                            Leche gourmet de vainilla y macadamia sin azúcar.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.70</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="946ml&#10240;Leche&#10240;Milkadamia" 
+                            data-price="1.70">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/8.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            1lb Leche Mt. Capra 
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star0.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Leche de cabra entera con alto contenido de calcio.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$1.80</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="1lb&#10240;Leche&#10240;Mt.&#10240;Capra" 
+                            data-price="1.80">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/9.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            52oz Leche Fairlife
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> 
+                        <p class="card-text"><br>
+                           2% Grasa reducida, leche ultra-filtrada natural.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$0.70</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="52oz&#10240;Leche&#10240;Fairlife" 
+                            data-price="0.70">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/10.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            946ml Leche Lactaid
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star1.png"> 
+                        <p class="card-text"><br>
+                            Leche 100% libre de lactosa Grado superior A.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.15</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="946ml&#10240;Leche&#10240;Lactaid" 
+                            data-price="2.15">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/11.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            2l Leche Natrel
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star0.png"> 
+                        <p class="card-text"><br>
+                            Leche filtrada ultra-fina con vitamina A y D.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$2.40</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="2l&#10240;Leche&#10240;Natrel" 
+                            data-price="2.40">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 18rem;">
+                    <img class="card-img-top" src="media/milk/12.jpg">
+                    <div class="card-body" style="text-align:left;">
+                        <h5 class="card-title">
+                            236ml Chocolate Klein
+                        </h5>
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> <img src="media/star.png">
+                        <img src="media/star.png"> 
+                        <p class="card-text"><br>
+                            Leche de chocolate enriquecida con vitamina D.
+                        </p>
+                        <p class="card-text" style="color:#2F7661;">
+                            <img src="media/tag.png"> <b>$0.90</b>
+                        </p>
+                        <a class="add-to-basket btn btn-custom zoom" href="#"
+                            data-name="236ml&#10240;Chocolate&#10240;Klein" 
+                            data-price="0.90">
+                            Agregar a Orden
+                        </a>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.05; padding-top: 9px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.20; padding-top: 7px; padding-bottom: 5px;"></div>
+    <div class="container-fluid" style="background-color:#1E1E21; 
+    opacity: 0.95; padding-top: 5px; padding-bottom: 5px;"></div>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color:#1E1E21; 
+        padding-bottom:10px;">
+        <div class="footer-copyright text-center" style="color:#FFFFFF;"><br>
+            © 2020 Copyright: Sebastian Magaña; Francisco Santamaría; Bryan Palma - Diseño Web Adaptable 
+            <br><br>
+        </div>
+    </div>
+
+    <!-- Basket - Modal -->
+    <div class="modal" role="dialog" id="basket" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Dairy Store - Orden de Compra</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="show-basket table"></table>
+                    <div class="float-right">
+                        <b style="color:#2F7661;">
+                            Total: $<span class="total-cart"></span>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Regresar
+                    </button>
+                    <a class="btn btn-custom" href="pago.html">
+                        Continuar a Pago
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+
+    <!-- Body definition ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- JavaScript -->
+<script src="script.js"></script>
+</html>

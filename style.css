@@ -1,0 +1,141 @@
+/* Proyecto Final - Diseño Web Adaptable - Período III
+Estudiantes:
+1. Magaña Urrutia, Juan Sebastian - 2019MU601   
+2. Santamaría Calderón, René Francisco - 2018SC606
+3. Palma Flores, Bryan Mauricio - 2018PF601 */
+
+body { 
+    padding-top: 60px; 
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #F9F9F9;
+    background-color: #59A084;
+}
+
+.card {
+    margin: 0px auto;
+    float: none;
+    height: 525px;
+    margin-bottom: 30px;
+}
+
+.card-custom {
+    margin: 0px auto;
+    float: none;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 260px;
+}
+
+.card-wide {
+    margin: 0px auto;
+    float: none;
+    height: 540px;
+    margin-bottom: 30px;
+}
+
+.card-img-top-wide {
+    height: 230px;
+}
+
+.btn-custom {
+    color: #FFFFFF;
+    background-color: #35856D;
+    border-color: #35856D;
+    width: 240px !important; 
+    height: 38px !important;
+    padding-top: 5px !important;
+}
+
+.btn-custom:hover {
+    color: #2F7661;
+    background-color: #FFFFFF;
+    border-color: #35856D
+}
+
+.btn-custom:focus {
+   outline: none !important; 
+   box-shadow: none;
+}
+
+.btn-custom:active {
+   outline: none !important;
+   background-color: #184E3E;
+   color: #FFFFFF;
+   box-shadow: none;
+}
+
+.btn-custom-basket {
+    color: #FFFFFF;
+    background-color: #35856D;
+    border-color: #35856D;
+    padding-top: 5px !important;
+}
+
+.btn-custom-basket:hover {
+    color: #FFFFFF;
+    background-color: #247A60;
+    border-color: #247A60;
+}
+
+.btn-custom-basket:focus,.btn-custom-basket:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.carousel-item {
+    height: 600px;
+    background-repeat: no-repeat;
+    border-bottom: 0px;
+    background-size:cover;
+}
+
+.zoom {
+    padding: 25px;
+    transition: transform .2s;
+    width: 270px;
+    height: 250px;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.a-custom {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #151515;
+    opacity: 0.82;
+    color: #FDFDFD;
+    padding: 15px 35px 10px 35px;
+}
+
+.centered-text:hover {
+    background-color: #1F6C55;
+    opacity: 0.92;
+    color: #FFFFFF;
+}
+
+.navbar-custom {
+    background-color: #1E1E21;
+}
+
+.text-line {
+    display: block;
+    height: 3px;
+    background: #1F6C55;
+    margin: 12px auto;
+}
